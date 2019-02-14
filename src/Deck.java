@@ -32,8 +32,20 @@ public class Deck {
      * @param suits is an array containing all of the card suits.
      * @param values is an array containing all of the card point values.
      */
-    public Deck(String[] ranks, String[] suits, int[] values) {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+    public Deck(String[] ranks, String[] suits, int[] values)
+    {
+        Card
+		for(int i=0; i<ranks.length; i++)
+        {
+            for(int j=0; j<suits.length; j++)
+            {
+                for(int k=0; k<values.length; k++)
+                {
+                    Card
+                }
+            }
+        }
+
     }
 
 
