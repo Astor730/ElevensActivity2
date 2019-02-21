@@ -46,7 +46,7 @@ public class Deck {
             }
             a=0;
         }
-
+        size = cards.size();
     }
 
 
@@ -54,23 +54,33 @@ public class Deck {
      * Determines if this deck is empty (no undealt cards).
      * @return true if this deck is empty, false otherwise.
      */
-    public boolean isEmpty() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+    public boolean isEmpty()
+    {
+		if(size == 1)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
     /**
      * Accesses the number of undealt cards in this deck.
      * @return the number of undealt cards in this deck.
      */
-    public int size() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+    public int size()
+    {
+		return size;
     }
 
     /**
      * Randomly permute the given collection of cards
      * and reset the size to represent the entire deck.
      */
-    public void shuffle() {
+    public void shuffle()
+    {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 4 *** */
     }
 
@@ -79,8 +89,10 @@ public class Deck {
      * @return the card just dealt, or null if all the cards have been
      *         previously dealt.
      */
-    public Card deal() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+    public Card deal()
+    {
+		size = size -1;
+		return cards.get(size);
     }
 
     /**
